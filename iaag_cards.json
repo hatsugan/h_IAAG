@@ -1,0 +1,94 @@
+{
+  "TYPES": {
+    "PERM": "PERMANENT OBJECT: Non fungible item",
+    "CONS": "CONSUMABLE OBJECT: Fungible item such as supplies",
+    "NOBJ": "NOT OBJECT: Not a physical item ushc as software, job",
+    "GEN ITEM": "(PERMANENT)",
+    "SENTIMENT ITEM": "",
+    "VEHICLE": "(PERMANENT)",
+    "TOOL": "(PERMANENT), Tool or equipment",
+    "CAR": "(sub VEHICLE)",
+    "COMPUTER": "(sub TOOL) PC, single board computer",
+    "MOBILE": "(mod TOOL) does not require mains ie has a battery",
+    "MICROC": "(sub TOOL) Microcontroller",
+    "MATERIAL": "Consumable Item for invention or engineering",
+    "SMARTPHONE": "",
+    "FOOD": "",
+    "SHELF": "",
+    "FRIDGE": "",
+    "FREEZER": "",
+    "PERISHABLE": "",
+    "PAPER DOCUMENT": "",
+    "MECHANICAL": "Can combine for electromechanical",
+    "AUTOMOTIVE": "Can combine for electromechanical",
+    "ELECTRONIC": "Has logic, Can combine for electromechanical, combined with tool, is device",
+    "ELECTRICAL": "Can combine for electromechanical, combined with tool, is device",
+    "SUPPLIES": "",
+    "CLEANING": "",
+    "OFFICE": "Office supplies, writing utensile, etc",
+    "ART": "Office supplies, writing utensile, etc"
+  },
+  "ORIGINALS FORMAT": [
+    "TITLE :{",
+    "OID: Original ID, sequential",
+    "DESCRIPTION: Four line description",
+    "VERSION: Version code following the MK## or the V### WILLE version naming convention",
+    "VERSION LIST: { 'V000, 2022 JUN 28: Initial version' ",
+    "                'V001, 2022 JUN 29: Improved blah blah blah. More detail in the TITLE_VERSIONS.txt file' "
+  ],
+  "ORIGINALS": {
+    "EXAMPLE": {
+      "OID": 0,
+      "TYPES": ["NOBJ"],
+      "DESCRIPTION":
+      ["This is an example of a description for an original. There is a maximum of four lines",
+        "A second line can be used to add additional information.",
+        "A third line can be used to add additional information.",
+        "A fourth line can be used to add additional information."],
+      "VERSION": "V000",
+      "VERSION HISTORY": [
+        "V000, 2022 JUN 28: Initial version"
+      ]
+    }
+  },
+  "INSTANCES FORMAT": [
+    "IID (INSTANCE ID) :{",
+    "TITLE: Original ID, sequential",
+    "SUBTITLE: Original ID, sequential",
+    "OID: Original ID, sequential",
+    "ORIG DESCRIPTION: Four line description",
+    "INSTANCE DESCRIPTION: 8 line description. Optional additional notes IID_TITLE_NOTES.txt",
+    "VERSION: Version code following the MK## or the V### WILLE version naming convention",
+    "LOCATIONS:{ 'LOCATION': QTY pairs}",
+    "STATUS: ACTIVE, HYPOTHETICAL, ARCHIVE, SUSPENDED"
+  ],
+  "INSTANCES": {
+    "0": {
+      "TITLE": "Inherited Title",
+      "SUBTITLE": "",
+      "OID": 0,
+      "TYPES": ["SUPPLIES"],
+      "DESCRIPTION":
+      ["This is an example of a description for an original. There is a maximum of four lines",
+        "A second line can be used to add additional information.",
+        "A third line can be used to add additional information.",
+        "A fourth line can be used to add additional information."],
+      "INSTANCE DESCRIPTION":
+      ["This is an example of a description for an instance. There is a maximum of eight lines",
+        "A second line can be used to add additional information.",
+        "QUANTITY UNIT:(ROLL/ROLLS)",
+        "A fourth line can be used to add additional information.",
+        "A fifth line can be used to add additional information.",
+        "A sixth line can be used to add additional information.",
+        "A seventh line can be used to add additional information.",
+        "An eighth line can be used to add additional information."],
+      "VERSION": "V000",
+      "CREATION TIMESTAMP": "2022 JUN 28, 1800",
+      "LOCATIONS": {
+        "LOCATION 1": 2,
+        "LOCATION 2": 3
+      },
+      "STATUS": "ACTIVE"
+    }
+  }
+}
